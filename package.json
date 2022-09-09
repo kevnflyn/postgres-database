@@ -1,0 +1,15 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pg:init": "pg_ctl init -D postgres_database",
+    "pg:start": "pg_ctl -D postgres_database start",
+    "pg:createdb": "createdb --owner=robertstanton --encoding=utf8 --host=127.0.0.1 --port=5432 -e cisco_cars_exercise",
+    "pg:stop": "pg_ctl -D postgres_database stop"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
